@@ -1,0 +1,88 @@
+@import "../App.scss";
+
+.Faqs {
+    padding: 2em 4em 0 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.Faqs--Header {
+    max-width: 65em;
+    text-align: right;
+}
+
+.Faqs--Header p:first-child {
+    font-weight: $regularweight;
+    font-size: $bigsize;
+}
+
+.Faqs--Header p:last-child {
+    font-weight: $lightweight;
+    font-size: $mediumsize;
+}
+
+.Faqs--Body {
+    padding: 2em;
+}
+
+.Faqs--Accordion button {
+    width: 100%;
+}
+
+.Faqs--Accordion button:focus,
+.Faqs--Accordion button:hover {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.Faqs--Accordion .card {
+    border: none;
+}
+
+.Faqs--Accordion .card-header {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.Faqs--Accordion .card-body {
+    text-align: right;
+    padding: 0 2.5em 0.5em 2.5em;
+    font-size: $mediumsize;
+    font-weight: $lightweight;
+}
+
+.Collapsible--ButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.Collapsible--ButtonIcon {
+    margin-left: 1em;
+    height: 0.9em;
+    width: 0.9em;
+    object-fit: contain;
+}
+
+.Collapsible--ButtonText {
+    font-weight: $lightweight;
+    font-size: $mediumsize;
+    color: $blue;
+    margin: 0;
+}
+
+.Collapsible--ButtonText.Active {
+    color: $red;
+    font-weight: $regularweight;
+}
+
+.Copyrights {
+    color: lighten($color: $black, $amount: 75);
+    text-align: center;
+}

@@ -1,0 +1,71 @@
+@import "../App.scss";
+
+.Parties {
+    padding: 2em 4em 0 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.Parties--Header {
+    max-width: 65em;
+    text-align: right;
+}
+
+.Parties--Header p:first-child {
+    font-weight: $regularweight;
+    font-size: $bigsize;
+}
+
+.Parties--Header p:last-child {
+    font-weight: $lightweight;
+    font-size: $mediumsize;
+}
+
+.Parties--SearchContainer {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid lighten($color: $black, $amount: 75);
+    padding-bottom: 1em;
+}
+
+.Parties--SearchIcon{
+    margin-right: 1em;
+}
+
+.Parties--SearchInput {
+    margin-right: .5em;
+    border: none;
+    font-size: $regularsize;
+    font-weight: $lightweight;
+    color: $green;
+    width: 100%;
+}
+
+.Parties--SearchInput::placeholder {
+    color: lighten($color: $black, $amount: 75);
+}
+
+.Parties--SearchInput:focus {
+    border: none;
+    outline: none;
+}
+
+.Parties--CardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Parties--CardsContainer.Centered{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 20em;
+    color:$red;
+}
+
+.Copyrights {
+    color: lighten($color: $black, $amount: 75);
+}

@@ -1,2 +1,2 @@
-# Miflagti
-A concept website that shares information about the relevant election parties to help you better understand who should you vote for based on the things that matter most to you.
+# miflagti-app
+An app that shows general information about the elections and the parties involved.

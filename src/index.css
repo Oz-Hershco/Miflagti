@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html,
+body,
+#root {
+  height: 100%;
+  direction: rtl !important;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

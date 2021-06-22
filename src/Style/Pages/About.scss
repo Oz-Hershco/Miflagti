@@ -1,0 +1,59 @@
+@import "../App.scss";
+
+.About {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.About--Body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50em;
+}
+
+.Copyrights {
+    color: lighten($color: $black, $amount: 75);
+}
+
+.About--PictureContainer {
+    border: 1px solid $lightgray;
+    border-radius: 10em;
+}
+
+.About--PictureContainer img {
+    border-radius: 10em;
+    width: 18em;
+    height: 18em;
+}
+
+.About--Title{
+    font-size: $mediumsize;
+    margin:  1em 0;
+    text-align: center;
+}
+
+.About--Paragraph{
+    font-size: $smallsize;
+    text-align: center;
+}
+
+.About--PortfolioButton{
+    background-color: $green;
+    color: $white;
+    font-size: $mediumsize;
+    padding: .3em .5em;
+    border-radius: .2em;
+    margin-top: .5em;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.About--PortfolioButton:hover{
+    background-color: $lightgreen;
+}

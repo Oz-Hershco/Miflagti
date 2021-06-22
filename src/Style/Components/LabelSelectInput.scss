@@ -1,0 +1,58 @@
+@import "../App.scss";
+
+.LabelSelectInput {
+    display: flex;
+}
+
+.LabelSelectInput-Item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $blue;
+    color: $blue;
+    padding: 0.3em 0.5em;
+    margin-left: 1em;
+    border-radius: 0.2em;
+    font-weight: $lightweight;
+    cursor: pointer;
+}
+
+.LabelSelectInput-Item.Checked {
+    background-color: $blue;
+    color: $white;
+}
+
+.LabelSelectInput-Item:hover {
+    border: 1px solid $blue;
+    background-color: $blue;
+    color: $white;
+}
+
+.LabelSelectInput-Item:active {
+    border: 1px solid darken($color: $blue, $amount: 10);
+    background-color: darken($color: $blue, $amount: 10);
+    color: $white;
+}
+
+.LabelSelectInput-Item--InfoCircle {
+    display: flex;
+    background-color: $white;
+    color: $blue;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $blue;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 2em;
+    font-weight: $regularweight;
+    margin-right: 0.3em;
+}
+
+.LabelSelectInput-Item--InfoCircle:hover {
+    background-color: $green;
+    color: $white;
+}
+
+.LabelSelectInput-Item--InfoCircle--Tooltip .tooltip-inner {
+    max-width: 28em;
+}

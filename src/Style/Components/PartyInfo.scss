@@ -1,0 +1,61 @@
+@import "../App.scss";
+
+.PartyInfo--Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.PartyInfo--CloseContainer {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PartyInfo--CloseContainer span {
+    margin-left: 0.5em;
+    color: $red;
+    font-weight: $mediumweight;
+}
+
+.PartyInfo--CloseContainer img {
+    width: auto;
+    height: 0.8em;
+}
+
+.PartyInfo--Title {
+    color: $blue;
+    margin: 0;
+    text-align: right;
+    font-weight: $mediumweight;
+    font-size: $mediumsize;
+}
+
+.PartyInfo--Subtitle {
+    color: lighten($color: $black, $amount: 75);
+    margin: 0;
+}
+
+.PartyInfo--Body{
+    text-align: right;
+    margin: 1em 0;
+    max-height: 20em;
+    overflow-y: auto;
+    padding-left: 1em;
+}
+
+/* width */
+.PartyInfo--Body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  .PartyInfo--Body::-webkit-scrollbar-track {
+    background: $lightgray; 
+  }
+   
+  /* Handle */
+  .PartyInfo--Body::-webkit-scrollbar-thumb {
+    background: $blue; 
+  }

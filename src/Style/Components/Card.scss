@@ -1,0 +1,23 @@
+@import "../App.scss";
+
+.Card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 4em;
+    border: 1px solid lighten($color: $black, $amount: 75);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-left: 2.5em;
+    margin-top: 2.5em;
+}
+
+.Card:hover {
+    transform: scale(1.1);
+}
+
+.Card--Title {
+    color: $blue;
+    font-size: $regularsize;
+    font-weight: $regularweight;
+}
